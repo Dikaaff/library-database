@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dika - LibraryDatabase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head>
+<body>
+
+  <div class="profile-picture">
+    <img src="assets/image/download (1).jpg" alt="Profil Picture">
+  </div>
+
+  <h1>Database library</h1>
+
+  <div id="bookForm">
+    <input type="text" id="title" placeholder="Judul Buku">
+    <input type="text" id="author" placeholder="Penulis">
+    <input type="number" id="year" placeholder="Tahun">
+    <input type="checkbox" id="isComplete">
+    <label for="isComplete">Selesai dibaca</label>
+    <button onclick="addBook()">Tambah Buku</button>
+  </div>
+
+  <div id="bookshelves">
+    <div id="unfinishedBooks">
+      <h2>Belum Selesai Dibaca</h2>
+      <ul id="unfinishedList"></ul>
+    </div>
+    <div id="finishedBooks">
+      <h2>Selesai Dibaca</h2>
+      <ul id="finishedList"></ul>
+    </div>
+  </div>
+</body>
+<script src="assets/main.js"></script>
+</html>
